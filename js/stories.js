@@ -14,7 +14,7 @@ const stories = [
     {
         age: "kids",
         category: "moral",
-        title: "The Honest Rabbit",
+        title: "The Honest Rabbit", 
         content: `A small rabbit found a golden carrot in the forest.
         Though hungry, he returned it to the farmer.
         The farmer rewarded him with friendship and safety.
@@ -111,6 +111,15 @@ function openStory(title) {
     window.location.href = `story.html?title=${encodeURIComponent(title)}`;
 }
 });
+let stories = [];
+
+fetch("stories.json")
+  .then(response => response.json())
+  .then(data => {
+    stories = data;
+  })
+  .catch(error => console.error("Error loading stories:", error));
+
 document.addEventListener("DOMContentLoaded", () => {
 
     const params = new URLSearchParams(window.location.search);
