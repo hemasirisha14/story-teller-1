@@ -46,3 +46,22 @@ h1 {
     gap: 15px;
     margin-top: 25px;
 }
+.back-home-container {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.back-home-btn {
+    background-color: #ffffff;
+    color: #5a5ad1;
+    border: none;
+    padding: 10px 22px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.back-home-btn:hover {
+    background-color: #e6e6ff;
+}

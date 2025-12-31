@@ -78,5 +78,9 @@ function readPage() {
     speech.rate = 0.9;
     window.speechSynthesis.speak(speech);
 }
+function goHome() {
+    window.location.href = "index.html";
+}
+
 
 render();
