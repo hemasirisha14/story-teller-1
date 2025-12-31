@@ -1,0 +1,50 @@
+[
+  {
+    "age": "kids",
+    "category": "adventure",
+    "title": "The Jungle Adventure",
+    "content": "Once upon a time, a brave little boy named Arjun entered a mysterious jungle. The trees whispered secrets and colorful birds guided his way. He helped animals in trouble and learned the value of kindness. At sunset, the jungle rewarded him with magical fruits. Arjun returned home a hero, filled with courage and joy."
+  },
+  {
+    "age": "kids",
+    "category": "moral",
+    "title": "The Honest Rabbit",
+    "content": "A small rabbit found a golden carrot in the forest. Though hungry, he returned it to the farmer. The farmer rewarded him with friendship and safety. Honesty made the rabbit respected by all. Truth always brings happiness."
+  },
+  {
+    "age": "adults",
+    "category": "thriller",
+    "title": "Midnight Train",
+    "content": "The train arrived with no passengers. Each station echoed forgotten screams. A diary revealed a crime buried in time. Shadows moved where no one stood. Dawn revealed the truth — the train carried memories."
+  },
+  {
+    "age": "adults",
+    "category": "horror",
+    "title": "Whispers in the Hall",
+    "content": "A chilling story about secrets hidden within silent corridors."
+  },
+  {
+    "age": "kids",
+    "category": "humorous",
+    "title": "The Laughing Monkey",
+    "content": "A monkey loved telling jokes. Even the grumpy lion laughed. Laughter solved every problem. The jungle became joyful again. Smiles are the best magic."
+  },
+  {
+    "age": "kids",
+    "category": "family and friends",
+    "title": "Family and Friends",
+    "content": "A heartwarming story about love, support, and togetherness."
+  },
+  {
+    "age": "adults",
+    "category": "adventure",
+    "title": "Beyond the Mountain",
+    "content": "An inner journey of courage and self-discovery."
+  },
+  {
+    "age": "adults",
+    "category": "moral",
+    "title": "The Price of Truth",
+    "content": "A powerful story about honesty, courage, and choosing integrity over comfort."
+  }
+]
