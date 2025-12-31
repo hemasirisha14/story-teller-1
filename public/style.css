@@ -1,0 +1,103 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BACKGROUND */
+body {
+    height: 100vh;
+    background: linear-gradient(270deg, #ff6ec4, #7873f5, #4ade80, #facc15);
+    background-size: 800% 800%;
+    animation: gradientMove 12s ease infinite;
+    overflow: hidden;
+}
+
+/* BACKGROUND ANIMATION */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* GLASS CARD */
+.selection-box {
+    width: 380px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    animation: fadeUp 1.4s ease;
+}
+
+/* CARD ANIMATION */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* TITLE */
+.selection-box h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 2px 4px 10px rgba(0,0,0,0.4);
+}
+
+/* SELECT */
+.form-select {
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 1rem;
+}
+
+/* BUTTON */
+.btn-light {
+    border-radius: 14px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 12px;
+    transition: all 0.4s ease;
+}
+
+.btn-light:hover {
+    background-color: #4ade80;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* FLOATING EMOJIS */
+.floating {
+    position: absolute;
+    font-size: 2.5rem;
+    animation: float 6s ease-in-out infinite;
+    left: 10%;
+    top: 20%;
+}
+
+.delay1 { left: 80%; top: 25%; animation-delay: 1s; }
+.delay2 { left: 20%; top: 70%; animation-delay: 2s; }
+.delay3 { left: 70%; top: 65%; animation-delay: 3s; }
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+}

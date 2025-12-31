@@ -1,0 +1,48 @@
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    min-height: 100vh;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.story-card {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 18px;
+    padding: 25px;
+    transition: all 0.4s ease;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.story-card:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+
+.story-card h3 {
+    font-weight: 600;
+}
+
+.read-btn {
+    margin-top: 15px;
+    font-weight: bold;
+}
+.story-box {
+    background: rgba(255,255,255,0.15);
+    padding: 30px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    backdrop-filter: blur(12px);
+    min-height: 250px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}

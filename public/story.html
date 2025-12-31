@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Story Reader</title>
+    <link rel="stylesheet" href="story.css">
+</head>
+<body>
+
+    <div class="container py-5 text-center">
+        <h2 id="storyTitle"></h2>
+        <p id="storyText" class="story-box"></p>
+
+        <div class="controls">
+            <button onclick="prevPage()">⬅ Prev</button>
+            <button onclick="readPage()">🔊 Read Aloud</button>
+            <button onclick="nextPage()">Next ➡</button>
+        </div>
+    </div>
+
+    <script src="../js/reader.js"></script>
+</body>
+</html>
