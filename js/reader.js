@@ -78,6 +78,38 @@ function readPage() {
     speech.rate = 0.9;
     window.speechSynthesis.speak(speech);
 }
+let speech;
+let isPaused = false;
+
+document.getElementById("readAloudBtn")?.addEventListener("click", () => {
+    const storyText = document.querySelector(".story-content")?.innerText;
+    if (!storyText) return;
+
+    speechSynthesis.cancel(); // reset if already speaking
+    speech = new SpeechSynthesisUtterance(storyText);
+    speech.rate = 1;
+    speech.pitch = 1;
+    speech.lang = "en-US";
+
+    speechSynthesis.speak(speech);
+    isPaused = false;
+});
+
+document.getElementById("pauseBtn")?.addEventListener("click", () => {
+    if (speechSynthesis.speaking && !isPaused) {
+        speechSynthesis.pause();
+        isPaused = true;
+    } else if (speechSynthesis.paused) {
+        speechSynthesis.resume();
+        isPaused = false;
+    }
+});
+
+document.getElementById("stopBtn")?.addEventListener("click", () => {
+    speechSynthesis.cancel();
+    isPaused = false;
+});
+
 function goHome() {
     window.location.href = "index.html";
 }
